@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileComputingServicesToSupportFloodDisaster"
+        tools:targetApi="31">
+        <activity
+            android:name=".user.UserList"
+            android:exported="false" />
+        <activity
+            android:name=".Donors.AddDonation"
+            android:exported="false" />
+        <activity
+            android:name=".user.ViewDonations"
+            android:exported="false" />
+        <activity
+            android:name=".user.Viewsupports"
+            android:exported="false" />
+        <activity
+            android:name=".user.History"
+            android:exported="false" />
+        <activity
+            android:name=".user.Addrequest"
+            android:exported="false" />
+        <activity
+            android:name=".Offline.Emergencylist"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Adminsupports"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Admindonors"
+            android:exported="false" />
+        <activity
+            android:name=".Offline.safety"
+            android:exported="false" />
+        <activity
+            android:name=".user.DonerActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".DonorDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".SupportDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".user.Userdashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Offline.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

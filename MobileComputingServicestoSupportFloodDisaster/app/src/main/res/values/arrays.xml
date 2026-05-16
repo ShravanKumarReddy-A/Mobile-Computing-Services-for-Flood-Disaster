@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typDonation">
+        <item>Monetary Donation</item>
+        <item>Food Donation</item>
+        <item>Clothing Donation</item>
+        <item>Blood Donation</item>
+        <item>Book Donation</item>
+    </string-array>
+</resources>

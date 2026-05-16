@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Donors.AddDonation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingEnd="20sp"
+        android:text="Please send precription photo"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        style="@style/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/texthead"
+                android:layout_height="wrap_content"
+                android:text="Name *"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/headtext" />
+
+            <TextView
+                style="@style/texthead"
+                android:layout_height="wrap_content"
+                android:text="Mail-id *"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/mailid2"
+                style="@style/headtext"
+                android:text="Text@gail.com"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/texthead"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/mobile"
+                style="@style/headtext"
+                android:text="0000000000"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                style="@style/texthead"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/adress"
+                style="@style/headtext"
+                android:text="Tiupati"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/seton"
+            android:layout_width="0dp"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/line"
+            android:padding="10dp"
+            android:src="@drawable/camera"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="9dp"
+        android:background="@drawable/line">
+
+        <EditText
+            android:id="@+id/discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:hint="Description"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/disnmae"
+        style="@style/headtext"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="@color/black"
+        android:hint="Help"
+        android:text=""
+        tools:ignore="HardcodedText" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/line"
+        android:backgroundTint="@color/teal_200"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>
+
